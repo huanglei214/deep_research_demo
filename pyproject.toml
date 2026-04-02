@@ -1,0 +1,14 @@
+[project]
+name = "deep-research-demo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "firecrawl-py>=4.21.0",
+    "deerflow-harness @ git+https://github.com/bytedance/deer-flow.git@main#subdirectory=backend/packages/harness",
+    "jinja2>=3.1.6",
+    "langchain-openai>=1.1.12",
+    "langchain-tavily>=0.2.17",
+    "socksio>=1.0.0",
+]

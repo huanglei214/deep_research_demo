@@ -1,0 +1,13 @@
+config_version: 1
+
+sandbox:
+  use: deerflow.sandbox.local:LocalSandboxProvider
+
+models:
+  - name: ark-chat
+    display_name: Ark Chat
+    use: langchain_openai:ChatOpenAI
+    model: ep-20260309171756-fc8tf
+    base_url: https://ark-cn-beijing.bytedance.net/api/v3
+    api_key: $ARK_API_KEY
+    temperature: 0
